@@ -498,9 +498,13 @@ li {
 
 header {
   position: relative;
+  padding-top: 1rem;
   margin-bottom: 5rem;
 }
 @media (min-width: 1000px) {
+  header {
+    padding-top: 0;
+  }
   header::after {
     content: "";
     position: absolute;
@@ -545,15 +549,15 @@ header > div .logo svg {
 }
 header > div nav {
   background-color: var(--clr-neutral-700);
-  width: 100%;
+  width: 100vw;
   display: none;
   z-index: 10;
   position: absolute;
   top: 5.063rem;
-  right: 0;
 }
 @media (min-width: 1000px) {
   header > div nav {
+    width: 100%;
     display: block;
     position: initial;
     z-index: 0;

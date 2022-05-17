@@ -1,8 +1,11 @@
 header {
   position: relative;
+  padding-top: 1rem;
   margin-bottom: 5rem;
 
   @include mq(xl) {
+    padding-top: 0;
+
     &::after {
       content: '';
       @include position(absolute, null, 0, 0, null);
@@ -41,13 +44,14 @@ header {
 
     nav {
       background-color: var(--clr-neutral-700);
-      width: 100%;
+      width: 100vw;
       display: none;
       z-index: 10;
 
-      @include position(absolute, 5.063rem, 0 null, null);
+      @include position(absolute, 5.063rem, null null, null);
 
       @include mq(xl) {
+        width: 100%;
         display: block;
         position: initial;
         z-index: 0;
