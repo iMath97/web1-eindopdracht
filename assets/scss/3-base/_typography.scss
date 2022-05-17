@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+$font-primary: 'Montserrat', sans-serif;
+$font-title: 'Mitr', sans-serif;
+$font-subtitle: 'Biryani', sans-serif;
+
+$weight: (
+  'x-light': 200,
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semi-bold': 600,
+  'bold': 700,
+  'semi-black': 800,
+  'black': 900,
+);
+
+$fontsize: (
+  title: 1.8rem,
+  subtitle: 1.4rem,
+  subtitle-big: 1.5rem,
+  text: 1rem,
+  text-small: 0.7rem,
+  nav: 1.1rem,
+  label: 1.125rem,
+);
+
+@function weight($var) {
+  @return map-get($map: $weight, $key: $var);
+}
+
+@function fontsize($arg) {
+  @return map-get($map: $fontsize, $key: $arg);
+}

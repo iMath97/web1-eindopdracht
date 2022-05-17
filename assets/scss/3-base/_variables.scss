@@ -1,0 +1,26 @@
+$bordersize: (
+  small: 0.063rem,
+  normal: 0.188rem,
+);
+
+$borderradius: (
+  normal: 0.0625rem,
+  big: 0.625rem,
+);
+
+$svgsize: (
+  small: 2rem,
+  normal: 4rem,
+);
+
+@function bordersize($arg) {
+  @return map-get($map: $bordersize, $key: $arg);
+}
+
+@function borderradius($arg) {
+  @return map-get($map: $borderradius, $key: $arg);
+}
+
+@function svgsize($arg) {
+  @return map-get($map: $svgsize, $key: $arg);
+}

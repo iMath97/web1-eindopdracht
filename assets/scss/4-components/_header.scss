@@ -1,0 +1,92 @@
+header {
+  background-color: var(--clr-neutral-700);
+  position: relative;
+
+  @include mq(xl) {
+    &::after {
+      content: '';
+      @include position(absolute, null, 0, 0, null);
+      width: 34rem;
+      height: 0.2rem;
+      background-color: var(--clr-highlight-500);
+    }
+  }
+
+  .hamburger {
+    @include position(absolute, 1rem, 10%, null, null);
+
+    svg {
+      height: svgsize(small);
+      fill: var(--clr-neutral-100);
+    }
+  }
+
+  > div {
+    @include flex(center, center, column);
+
+    @include mq(xl) {
+      flex-direction: row;
+      height: 3.75rem;
+    }
+
+    .logo {
+      fill: var(--clr-highlight-500);
+      width: svgsize(normal);
+      padding-top: 1rem;
+    }
+
+    nav {
+      width: 100%;
+      display: none;
+
+      @include mq(xl) {
+        display: block;
+      }
+
+      &.nav_open {
+        display: block;
+      }
+
+      ul {
+        padding: 0;
+
+        @include mq(xl) {
+          @include flex(flex-end, center, row);
+        }
+
+        li {
+          list-style: none;
+
+          a {
+            display: block;
+            font-size: fontsize(nav);
+            padding: 1.93rem 0;
+            text-align: center;
+            text-decoration: none;
+            color: var(--clr-neutral-100);
+            transition: 500ms all ease-in-out;
+
+            &::first-letter {
+              color: var(--clr-highlight-500);
+            }
+
+            &:hover,
+            &:focus-visible,
+            &.active {
+              color: var(--clr-highlight-500);
+            }
+
+            &:hover,
+            &:focus-visible {
+              outline: var(--clr-highlight-500) solid 0.0625rem;
+            }
+
+            @include mq(xl) {
+              padding: 0 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

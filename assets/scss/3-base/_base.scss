@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  @extend %caps;
+  box-sizing: border-box;
+}
+
+* {
+  font-size: fontsize(text);
+  font-family: $font-primary;
+  color: var(--clr-neutral-100);
+}
+
+html {
+  scrollbar-color: #666 #201c29;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  background-color: var(--clr-neutral-700);
+}
+
+main {
+  position: relative;
+}
+h1 {
+  font-weight: weight(medium);
+  font-size: fontsize(title);
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: fontsize(subtitle);
+}
+h2 {
+  font-weight: weight(medium);
+}
+h5,
+h6 {
+  margin: 0;
+}
+h5 {
+  margin-bottom: 0.3rem;
+}
+h6 {
+  margin-top: 0.5rem;
+}
+
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: $font-primary;
+}
+p {
+  @include mq(s) {
+    font-size: 1.1rem;
+  }
+}
+
+// * A11y
+// * hover, focus, moz-focus-inner
+@mixin hover {
+  &:hover,
+  &:focus {
+    @content;
+  }
+  &::-moz-focus-inner {
+    @content;
+  }
+}
