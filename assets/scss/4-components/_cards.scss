@@ -1,0 +1,26 @@
+.cards {
+  display: grid;
+  gap: 2rem;
+
+  .card {
+    border: var(--clr-highlight-500) solid bordersize(small);
+    border-radius: borderradius(big);
+    overflow: hidden;
+
+    .img img {
+      width: 100%;
+    }
+
+    .text {
+      h2,
+      p {
+        text-align: center;
+      }
+    }
+
+    .cta {
+      height: 3rem;
+      border-top: solid bordersize(small) var(--clr-highlight-500);
+    }
+  }
+}

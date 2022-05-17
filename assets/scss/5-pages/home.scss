@@ -1,0 +1,29 @@
+@import '../2-mixins/mq';
+@import '../2-mixins/flex';
+@import '../3-base/variables';
+
+.welcome {
+  height: 35rem;
+  margin-bottom: 2rem;
+  background: url('../../img/park.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: borderradius(big);
+
+  @include flex(center, center, column);
+
+  @include mq(xl) {
+    height: 25rem;
+  }
+}
+
+.cards {
+  grid-template-columns: 1fr;
+
+  @include mq(m) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mq(xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

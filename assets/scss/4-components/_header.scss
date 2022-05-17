@@ -1,6 +1,6 @@
 header {
-  background-color: var(--clr-neutral-700);
   position: relative;
+  margin-bottom: 5rem;
 
   @include mq(xl) {
     &::after {
@@ -23,6 +23,7 @@ header {
 
   > div {
     @include flex(center, center, column);
+    position: relative;
 
     @include mq(xl) {
       flex-direction: row;
@@ -30,17 +31,26 @@ header {
     }
 
     .logo {
-      fill: var(--clr-highlight-500);
-      width: svgsize(normal);
-      padding-top: 1rem;
+      @include flex(center, center, row);
+
+      svg {
+        fill: var(--clr-highlight-500);
+        width: svgsize(normal);
+      }
     }
 
     nav {
+      background-color: var(--clr-neutral-700);
       width: 100%;
       display: none;
+      z-index: 10;
+
+      @include position(absolute, 5.063rem, 0 null, null);
 
       @include mq(xl) {
         display: block;
+        position: initial;
+        z-index: 0;
       }
 
       &.nav_open {

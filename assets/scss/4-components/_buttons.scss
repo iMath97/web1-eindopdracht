@@ -1,0 +1,22 @@
+.btn {
+  color: var(--clr-highlight-500);
+  border: solid bordersize(small) var(--clr-highlight-500);
+  transition: 500ms all ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--clr-highlight-500);
+    color: var(--clr-neutral-700);
+  }
+
+  &_primary {
+    border-radius: borderradius(big);
+    padding: 1rem;
+  }
+
+  &_secondary {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}

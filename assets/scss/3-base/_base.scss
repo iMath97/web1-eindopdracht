@@ -11,23 +11,19 @@
   color: var(--clr-neutral-100);
 }
 
-html {
-  scrollbar-color: #666 #201c29;
-}
-
 html,
 body {
   scroll-behavior: smooth;
   min-height: 100vh;
-  scroll-behavior: smooth;
   background-color: var(--clr-neutral-700);
 }
 
 main {
   position: relative;
+  margin-bottom: 2rem;
 }
 h1 {
-  font-weight: weight(medium);
+  font-weight: weight(bold);
   font-size: fontsize(title);
   text-transform: uppercase;
   margin-bottom: 1.25rem;
@@ -40,7 +36,7 @@ h6 {
   font-size: fontsize(subtitle);
 }
 h2 {
-  font-weight: weight(medium);
+  font-weight: weight(bold);
 }
 h5,
 h6 {
@@ -62,17 +58,5 @@ li {
 p {
   @include mq(s) {
     font-size: 1.1rem;
-  }
-}
-
-// * A11y
-// * hover, focus, moz-focus-inner
-@mixin hover {
-  &:hover,
-  &:focus {
-    @content;
-  }
-  &::-moz-focus-inner {
-    @content;
   }
 }
