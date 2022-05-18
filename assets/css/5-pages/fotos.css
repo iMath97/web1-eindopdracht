@@ -1,3 +1,31 @@
-
+/*
+  * Mobile first mq
+  *
+  * s: mobile
+  * m: tablet
+  * l: phablet
+  * xl: desktop
+  * xxl: desktop hd
+  */
+.cards {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 550px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.cards .card .content h2 {
+  font-weight: bold;
+  text-align: center;
+}
+.cards .card .content p {
+  text-align: center;
+}
 
 /*# sourceMappingURL=fotos.css.map */

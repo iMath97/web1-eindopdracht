@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"fotos.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/2-mixins/_mq.scss","../../scss/5-pages/fotos.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;ACEA;EACE;;ADmBE;ECpBJ;IAII;;;ADgBA;ECpBJ;IAOI;;;AAIA;EACE;EACA;;AAGF;EACE","file":"fotos.css"}

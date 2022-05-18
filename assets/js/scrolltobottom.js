@@ -5,3 +5,5 @@ scrollBTN.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
+alert('4k!');

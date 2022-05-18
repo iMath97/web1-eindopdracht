@@ -1,0 +1,23 @@
+@import '../2-mixins/mq';
+
+.cards {
+  grid-template-columns: 1fr;
+
+  @include mq(m) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mq(xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card .content {
+    h2 {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
