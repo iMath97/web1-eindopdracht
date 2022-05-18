@@ -190,7 +190,7 @@ header {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 34rem;
+    width: 45vw;
     height: 0.2rem;
     background-color: var(--clr-highlight-primary-500);
   }
@@ -288,6 +288,49 @@ header > div nav ul li a:hover, header > div nav ul li a:focus-visible {
   header > div nav ul li a {
     padding: 0 1rem;
   }
+}
+
+form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1000px) {
+  form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+form .form-group {
+  position: relative;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+form .form-group label {
+  position: absolute;
+  top: 0;
+  left: 0.625rem;
+  padding: 0 0.313rem;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  color: var(--clr-neutral-700);
+  pointer-events: none;
+  background-color: var(--clr-neutral-100);
+  border-radius: 0.313rem;
+}
+form .form-group input,
+form .form-group select {
+  border: 0.125rem solid var(--clr-neutral-700);
+  border-radius: 0.625rem;
+  background: none;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 0.625rem;
+}
+form .form-group input:focus,
+form .form-group select:focus {
+  border-color: var(--clr-highlight-primary-500);
+  outline: none;
 }
 
 .cards {

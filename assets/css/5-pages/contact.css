@@ -1,3 +1,49 @@
+/*
+  * Mobile first mq
+  *
+  * s: mobile
+  * m: tablet
+  * l: phablet
+  * xl: desktop
+  * xxl: desktop hd
+  */
+/*
+ *  flexbox
+ */
+@media (min-width: 1000px) {
+  .form-group_subject {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
 
+form .form-group.form-group_gender {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+form .form-group.form-group_gender label {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateY(0);
+}
+form .form-group.form-group_gender .choices {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+form .form-group.form-group_gender .choices span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+form .form-group.form-group_gender .choices span input {
+  width: 1rem;
+  height: 1rem;
+}
 
 /*# sourceMappingURL=contact.css.map */
