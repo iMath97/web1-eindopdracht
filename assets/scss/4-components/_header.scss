@@ -11,7 +11,7 @@ header {
       @include position(absolute, null, 0, 0, null);
       width: 34rem;
       height: 0.2rem;
-      background-color: var(--clr-highlight-500);
+      background-color: var(--clr-highlight-primary-500);
     }
   }
 
@@ -20,7 +20,7 @@ header {
 
     svg {
       height: svgsize(small);
-      fill: var(--clr-neutral-100);
+      fill: var(--clr-neutral-700);
     }
   }
 
@@ -37,13 +37,13 @@ header {
       @include flex(center, center, row);
 
       svg {
-        fill: var(--clr-highlight-500);
+        fill: var(--clr-highlight-primary-500);
         width: svgsize(normal);
       }
     }
 
     nav {
-      background-color: var(--clr-neutral-700);
+      background-color: var(--clr-neutral-100);
       width: 100vw;
       display: none;
       z-index: 10;
@@ -77,22 +77,23 @@ header {
             padding: 1.93rem 0;
             text-align: center;
             text-decoration: none;
-            color: var(--clr-neutral-100);
+            color: var(--clr-neutral-700);
             transition: 500ms all ease-in-out;
+            font-weight: bold;
 
             &::first-letter {
-              color: var(--clr-highlight-500);
+              color: var(--clr-highlight-primary-500);
             }
 
             &:hover,
             &:focus-visible,
             &.active {
-              color: var(--clr-highlight-500);
+              color: var(--clr-highlight-primary-500);
             }
 
             &:hover,
             &:focus-visible {
-              outline: var(--clr-highlight-500) solid 0.0625rem;
+              outline: var(--clr-highlight-primary-500) solid 0.0625rem;
             }
 
             @include mq(xl) {

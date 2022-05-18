@@ -8,14 +8,14 @@
 * {
   font-size: fontsize(text);
   font-family: $font-primary;
-  color: var(--clr-neutral-100);
+  color: var(--clr-neutral-700);
 }
 
 html,
 body {
   scroll-behavior: smooth;
   min-height: 100vh;
-  background-color: var(--clr-neutral-700);
+  background-color: var(--clr-neutral-100);
 }
 
 main {
