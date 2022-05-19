@@ -46,8 +46,10 @@ form .form-group.form-group_gender .choices span input {
   height: 1rem;
 }
 
-button[type=submit] {
-  width: 50%;
+@media (min-width: 1000px) {
+  button[type=submit] {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */
