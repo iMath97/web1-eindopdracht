@@ -20,6 +20,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.cards .card {
+  text-decoration: none;
+}
 .cards .card .text h2,
 .cards .card .text p {
   text-align: start;

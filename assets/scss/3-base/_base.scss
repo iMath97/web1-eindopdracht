@@ -13,6 +13,7 @@
 
 html,
 body {
+  position: relative;
   scroll-behavior: smooth;
   min-height: 100vh;
   background-color: var(--clr-neutral-100);
@@ -20,7 +21,11 @@ body {
 
 main {
   position: relative;
-  margin-bottom: 5rem;
+  padding-bottom: 43rem; // footer at bottom
+
+  @include mq(xl) {
+    padding-bottom: 30rem; // footer at bottom
+  }
 }
 h1 {
   font-weight: weight(bold);

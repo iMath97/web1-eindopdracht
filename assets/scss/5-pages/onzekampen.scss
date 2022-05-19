@@ -10,14 +10,18 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .card .text {
-    h2,
-    p {
-      text-align: start;
-    }
+  .card {
+    text-decoration: none;
 
-    h2 {
-      color: var(--clr-highlight-primary-500);
+    .text {
+      h2,
+      p {
+        text-align: start;
+      }
+
+      h2 {
+        color: var(--clr-highlight-primary-500);
+      }
     }
   }
 }

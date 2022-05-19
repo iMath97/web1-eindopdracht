@@ -10,14 +10,18 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .card .content {
-    h2 {
-      font-weight: bold;
-      text-align: center;
-    }
+  .card {
+    cursor: pointer;
 
-    p {
-      text-align: center;
+    .content {
+      h2 {
+        font-weight: bold;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
     }
   }
 }
