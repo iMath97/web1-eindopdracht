@@ -340,7 +340,7 @@ form .form-group select {
 }
 form .form-group input:focus,
 form .form-group select:focus {
-  border-color: var(--clr-highlight-primary-500);
+  border: 0.188rem solid var(--clr-neutral-700);
   outline: none;
 }
 form .form-group option {

@@ -34,7 +34,7 @@ form {
       padding-left: 0.625rem;
 
       &:focus {
-        border-color: var(--clr-highlight-primary-500);
+        border: bordersize(normal) solid var(--clr-neutral-700);
         outline: none;
       }
     }
